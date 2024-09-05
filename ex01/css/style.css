@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(white, lightgray, black);
+    display: grid;
+    place-content: center;
+}
+
+main {
+    background-color: white;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+input {
+    padding: 6px 12px;
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: rgb(241, 240, 240);
+
+
+}
