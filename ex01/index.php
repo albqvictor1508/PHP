@@ -8,43 +8,14 @@
 </head>
 <body>
     <main>
-        <form action="index.php" method="post">
-            Nome: <input type="text" name="nome"/>
-            Sobrenome: <input type="text" name="sobrenome"/>
-            Idade: <input type="idade" name="idade"/>
-        </form>
-        <?php
-        echo ValidaForm();
-        ?>
+        <div class="form-container">
+            <form action="formulario.php" method="post">
+                Nome: <input type="text" name="nome"/>
+                Sobrenome: <input type="text" name="sobrenome"/>
+                Idade: <input type="number" name="idade"/>
+                <button>Enviar</button>
+            </form>
+        </div>
     </main>
-
-    <script src="index.php"></script>
 </body>
 </html>
-
-<?php
-
-function recebeDados($dados) {
-    $nome = isset($dados['nome']) ? htmlspecialchars($dados['nome']): null;
-    $sobrenome = isset($dados['sobrenome']) ? htmlspecialchars($dados['sobrenome']): null;
-
-    if(is_string($nome) && is_string($sobrenome)) ValidaForm($nome, $sobrenome);    
-}
-
-function ValidaForm($nome, $sobrenome) {
-
-    if(!$nome || !$sobrenome) {
-        echo "<p>Nome e Sobrenome são obrigatórios.</p>";
-        return $erros;
-    }
-
-
-
-    return ` 
-    <p>
-        Nome: $nome
-        Sobrenome: $sobrenome
-    </p>
-    `;
-}
-?>

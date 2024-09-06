@@ -18,6 +18,7 @@ main {
 }
 
 input {
+    width: 90%;
     padding: 6px 12px;
     display: block;
     margin-bottom: 7px;
@@ -26,5 +27,13 @@ input {
     border: 1px solid lightgray;
     background-color: rgb(241, 240, 240);
 
+}
 
+button {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    width: 100%;
+    background-color: aqua;
 }
