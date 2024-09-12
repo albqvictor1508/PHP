@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label, input {
+            display: block;
+        }
+        label {
+            font-size: 0.9rem;
+        }
+
+        input {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="investimento.php" method="post">
+            <label for="input-tipo">Tipo de investimento: (1 ou 2)</label>
+            <input type="number" name="tipo"/>
+            <button type="submit">Enviar</button>
+            <p>1: Poupança</p>
+            <p>2: Fundos de renda fixa</p>
+        </form>
+    </main>
+</body>
+</html>
