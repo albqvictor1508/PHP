@@ -1,5 +1,4 @@
 <?php
-
     function tipoDeInvestimento() {
         $tipo = $_POST['tipo'];
         
@@ -16,4 +15,11 @@
     }
 
     echo tipoDeInvestimento();
+
+    $numeros = [2, 4, 5, 1, 9, 16];
+    $contador = 0;
+
+    foreach($numeros as $numero) {
+        $contador += $numero;
+    }
 ?>
