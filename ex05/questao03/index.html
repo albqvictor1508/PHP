@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .inputs input{
+            display: block;
+            margin: 10px;
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+        }
+
+        .selecionar-cursos input {
+            display: inline;
+        }
+
+        .selecionar-faixa-etaria input {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="index.php" method="post">
+            <div class="inputs">
+                <input type="text" name="nome" id="">
+                <input type="text" name="cpf" id="">
+                <input type="text" name="email" id="">
+
+                <h2>Selecione uma Cidade:</h2>
+                <select name="cidades" id="">
+
+                    <option value="Joao Pessoa">Joao Pessoa</option>
+                    <option value="Joao Pessoa">Recife</option>
+                    <option value="Joao Pessoa">Sapé</option>
+                    <option value="Joao Pessoa">Bayeux</option>
+                </select>
+
+                <div class="selecionar-cursos">
+                    <p><input type="checkbox" name="" id="" value=""> Android</p>
+                    <p><input type="checkbox" name="" id="">Python</p>
+                    <p><input type="checkbox"name="" id="">HTML/CSS</p>
+                    <p><input type="checkbox" name="" id="">Javascript</p>
+                </div>
+
+                <h2>Selecione sua idade</h2>
+                <div class="selecionar-faixa-etaria">
+                    <p><input type="radio" name="faixa-etaria">18 à 25</radio></p>
+                    <p><input type="radio" name="faixa-etaria">26 à 30</p>
+                    <p><input type="radio" name="faixa-etaria">31 à 45</p>
+                    <p><input type="radio" name="faixa-etaria">45 à 61</radio></p>
+                </div>
+                p<                <div class="botoes">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
